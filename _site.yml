@@ -3,7 +3,11 @@ output_dir : "."
 navbar:
   title: "My Website"
   left:
-    - text: "Home"
+    - text: "Espanol"
       href: index.html
-    - text: "About"
+    - text: "English"
       href: about.html
+output:
+  html_document:
+    theme: united
+    highlight: textmate
