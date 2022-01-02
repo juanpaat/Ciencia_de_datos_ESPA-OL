@@ -5,5 +5,5 @@ Acceder a la pag web con el siguiente link: https://juanpaat.github.io/about.htm
 
 
 
-https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html
+https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html  
 https://bookdown.org/yihui/rmarkdown/html-document.html
