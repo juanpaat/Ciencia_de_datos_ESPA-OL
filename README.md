@@ -1,5 +1,5 @@
 # Ciencia de datos
-Notas acerca de ciencia de datos en Español e Inglés
+Notas acerca de ciencia de datos en Español e Inglés  
 Notes about data cience in Spanish and English
 
 Acceder a la pag web con el siguiente link: https://juanpaat.github.io/about.html
