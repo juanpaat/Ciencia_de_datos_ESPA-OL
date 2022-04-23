@@ -2,6 +2,6 @@
 
 ## Analisis exploratorio de datos
 El **Análisis** exploratorio de datos es fundamental en la ciencia de datos ya que te da una idea aproximada de como son tus datos y de qué preguntas puedes responder. En esta parte del proceso, se experimenta con los datos y se visualizan los datos para tratar de descubrir patrones o plantearse nuevas preguntas que quizas no habias pensado abordar antes de este análisis.
-...
+....
 
 
