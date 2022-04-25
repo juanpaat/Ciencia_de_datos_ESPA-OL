@@ -1,7 +1,32 @@
----
-title: "English"
----
+# Data Science
 
-Site under construction. We'll be right back
+## Exploratory Data Analysis
+### Analytic graphics
+
+* **Show comparations:**  
+    + Show comparations.      
+    
+* **Show Causuality**  
+    + Show Causuality.  
+    
+* **Show Multivariate Data:**  
+    + Show Multivariate Data.  
+    
+* **Integrate multiple modes of evidence:**  
+    + Show comparations.      
+    
+* **Describe and document the evidence**  
+    + Show Causuality.  
+    
+* **Content is king:**  
+    + Show Multivariate Data.  
+    
+    
+### Exploratory Graphs  
+
+
+
+
+
 
 

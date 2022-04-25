@@ -1,7 +1,83 @@
 # Ciencia de datos
 
-## Analisis exploratorio de datos
+## Análisis Exploratorio de Datos
 El **Análisis** exploratorio de datos es fundamental en la ciencia de datos ya que te da una idea aproximada de como son tus datos y de qué preguntas puedes responder. En esta parte del proceso, se experimenta con los datos y se visualizan los datos para tratar de descubrir patrones o plantearse nuevas preguntas que quizas no habias pensado abordar antes de este análisis.
-....
 
+
+### Gráficos Analíticos
+A la hora de realizar gráficos analíticos, los cuale son quizá el componente más importante del análisis exploratorio, debes tener en cuenta algunos principios que sería bueno considerar cada vez que lleves a cabo un análisis de este tipo.  
+  
+* **Mostrar comparaciones:**  
+    + Toda pregunta es relativa a otra pregunta, por tanto hay que mostrar comparaciones, por tanto siempre hay que preguntarse ¿comparado con qué?.    
+* **Mostrar causalidad, mecanismo o explicación:**  
+    + Mostrar por qué crees que se da este fenómeno, no de manera muy formal, pero si basado en algunas inferencias lógicas que hayas hecho en tu proceso investigativo previo.   
+  
+* **Mostrar datos multivariables:**  
+    + Multivariabilidad es cuando se consideran más de dos variables. En realidad casi todas las cosas que pasan en el mundo dependen de más de una variable, por lo que una sola variable es una interpretación muy ingenua de la realidad en la gran mayoría de casos.  
+
+* **Integrar varios modos de evidencia:**  
+    + Debes de tener la habilidad de combinar todas las evidencias para hacer una análisis exploratorio más completo. Combinación entre palabras, tablas, números, imágenes y diagramas pueden ser algunos ejemplos de lo que puede ser compilado en este proceso. Acá hay que tener en cuenta que hay que hacer uso de las herramientas y no dejar que las herramientas hagan uso de tí, es decir hay que personalizar lo que más sea posible para explorar tus datos.
+    
+* **Describir y documentar evidencia apropiadamente:**  
+    + Es importante rotular bien los gráficos o las evidencias, hacer buen uso de las escalas y las fuente de las que te basas para hacer tus análisis. A gráfico de datos debe ser una historia completa que sea convincente y creible.  
+    
+* **El contenido lo es todo:**  
+    + En definitiva, la presentación de análisis depende de los datos que tengas, si no hay nada que los datos puedan decir, si la calidad de los datos no en buena o relevante o si no hay patrones o relaciones en los datos usados, nada podrá hacer que los datos luzcan diferente.  
+    
+    
+    
+    
+### Gráficos Exploratorios  
+Se usan gráficos en los análisis exploratorios porque se quiere lograr entender las propiedades de los datos, observar si existen patrones en ellos, sugerir estrategias para modelos como lineales o no lineales y para realizar debug análisis (observar en que parte del proceso hay bugs o errores).  
+Algunas características de estos gráficos exploratorios es que son rápidos y fáciles de hacer, además de que se realizan gran cantidad de estos. Generalmente son para entendimiento personal y no para presentarlo como resultado final de un análisis final. 
+
+Cosas como el color, los ejes, las leyendas, las formas y tamaños son dejadas para luego de estos análisis generalmente, cuando se quieren presentar los análisis en otras etapas del proyecto o en otros entornos más formales.
+
+
+
+
+```{r}
+pollution<-read.csv("https://raw.githubusercontent.com/juanpaat/courses/master/04_ExploratoryAnalysis/exploratoryGraphs/data/avgpm25.csv")
+
+head(pollution)
+```
+
+#### Simples resúmenes de datos
+1) Resumen con 5 estadísticos    
+```{r}
+summary(pollution$pm25)
+```
+2) Boxplots  
+```{r}
+boxplot(pollution$pm25,col = "azure2")
+abline(h=12)     #agregar alguna marca de interes. 
+```
+
+3) Histogramas  
+```{r}
+hist(pollution$pm25, col = "azure2", breaks = 100)    # breaks son el número de barras
+rug(pollution$pm25)         # Barras en la parte inferior del histograma
+```
+
+4) Plot de densidades  
+
+```{r}
+hist(pollution$pm25, col = "blue")
+rug(pollution$pm25)
+abline(v=12,lwd =2)
+abline(v=median(pollution$pm25), col = "black",lwd = 4)
+```
+5) Gráficos de barras  
+Es una forma de mostrar variables categóricas, generalmente estas barras representan frecuencia y pueden ser dispuestas tanto horizontal como verticalmente.
+```{r}
+barplot(table(pollution$region), col="blue", main = "Numero de condados en each región")
+```
+
+    
+
+    
+    
+    
+    
+    
 
